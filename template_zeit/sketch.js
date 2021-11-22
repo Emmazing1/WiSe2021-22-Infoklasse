@@ -62,11 +62,84 @@ function setup() {
 function draw() {
   var now = clock()
 
-  background('black');
-  var h = now.sec
+
+  background('pink');
+  var s = now.sec
   var m = now.min
-  var s = now.hours
-  console.log(h)
+  var h = now.hours
+  console.log(m)
+ 
+
+  let orangerect = color(220, 100, 10);
+noStroke()
+fill(orangerect);
+rect(0, 0, 800, m);
+
+let yellowrect = color(255, 204, 0);
+noStroke()
+fill(yellowrect);
+rect(50, 50, 50, s);
+
+let bluerect = color(10, 20, 70);
+noStroke()
+fill(bluerect);
+rect(100, 50, 50, s*10);
+
+let greenrect = color(10, 80, 50);
+noStroke()
+fill(greenrect);
+rect(150, 50, 50, s*20);
+
+let whiterecteins = color(255, 255, 255);
+noFill()
+stroke(whiterecteins);
+strokeWeight(1)
+rect(200, 50, s, s);
+
+let whiterectzwei = color(255, 255, 255);
+noFill()
+stroke(whiterectzwei);
+rect(700, 750, -m*8, -m*8);
+
+ellipse(200, 200, 200, 200)
+noStroke(ellipse)
+
+let weißerkreiseins = color(255, 255, 255)
+noStroke()
+fill(weißerkreiseins)
+ellipse(500, 70+5*s, 20, 20)
+
+let weißerkreiszwei = color(255, 255, 255)
+noStroke()
+fill(weißerkreiszwei)
+ellipse(550, 30+10*s, 20, 20)
+
+let weißerkreisdrei = color(255, 255, 255)
+noStroke()
+fill(weißerkreisdrei)
+ellipse(450, 30+15*s, 20, 20)
+
+let weißerkreisvier = color(255, 255, 255)
+noStroke()
+fill(weißerkreisvier)
+ellipse(650, 30+13*s, 20, 20)
+
+let weißerkreisfünf = color(255, 255, 255)
+noStroke()
+fill(weißerkreisfünf)
+ellipse(625, 730-3*s, 20, 20)
+
+let weißerkreissechs = color(255, 255, 255)
+noStroke()
+fill(weißerkreissechs)
+ellipse(550, 730-8*s, 20, 20)
+
+let grünerkreiseins = color(10, 80, 50)
+noFill()
+stroke(grünerkreiseins)
+strokeWeight(10)
+ellipse(550, 730-5*s, 20, 20)
+
 
 
 }
